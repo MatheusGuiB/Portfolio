@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import inprogress from '../../assets/images/work.gif'
 
-export const StyledProjectMain = styled.div`
+export const StyledProjectButton = styled.div`
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -9,9 +10,17 @@ export const StyledProjectMain = styled.div`
   justify-content: center;
   background-color: #050801;
 
-  .projects-button {
+  .projects-none {
+    display: none;
   }
-  .projects-button button {
+
+  .projects-button {
+    display: flex;
+  }
+  .projects-button-none {
+    display: none;
+  }
+  .projects-button .openProject {
     background-color: transparent;
     border: none;
     user-select: none;
@@ -28,18 +37,17 @@ export const StyledProjectMain = styled.div`
     transition: 0.5s;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
   }
-  .projects-button button:hover {
+  .projects-button .openProject:hover {
     background: #03e9f4;
     color: #050801;
     box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
       0 0 200px #03e9f4;
   }
-  .projects-button button span {
+  .projects-button .openProject span {
     position: absolute;
     display: block;
   }
-
-  .projects-button button span:nth-child(1) {
+  .projects-button .openProject span:nth-child(1) {
     top: 0;
     left: 0;
     width: 100%;
@@ -56,7 +64,7 @@ export const StyledProjectMain = styled.div`
       left: 100%;
     }
   }
-  .projects-button button span:nth-child(2) {
+  .projects-button .openProject span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 2px;
@@ -74,7 +82,7 @@ export const StyledProjectMain = styled.div`
       top: 100%;
     }
   }
-  .projects-button button span:nth-child(3) {
+  .projects-button .openProject span:nth-child(3) {
     bottom: 0%;
     right: -100;
     width: 100%;
@@ -92,7 +100,7 @@ export const StyledProjectMain = styled.div`
       right: 100%;
     }
   }
-  .projects-button button span:nth-child(4) {
+  .projects-button .openProject span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 2px;
@@ -110,14 +118,58 @@ export const StyledProjectMain = styled.div`
       bottom: 100%;
     }
   }
-`
-
-export const StyledProjectComponent = styled.div`
+  .display {
+    display: none;
+  }
+  .display-none {
+    display: flex;
+  }
   .container {
     display: flex;
-    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
   }
-  h1 {
-    color: white;
+  .show-container {
+  }
+  .container .close {
+    cursor: pointer;
+    width: 100px;
+    padding: 10px;
+    color: #03e9f4;
+    border-radius: 20px;
+    font-weight: 700;
+    border: none;
+    text-transform: uppercase;
+    background-color: transparent;
+  }
+  .container .close:hover {
+    color: black;
+    background-color: #03e9f4;
+    transform: scale(1.1);
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+      0 0 200px #03e9f4;
+  }
+  .container ul {
+    display: flex;
+    gap: 50px;
+  }
+  .container ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    background-image: url(${inprogress});
+    background-size: cover;
+    background-color: white;
+    list-style: none;
+    box-shadow: 0px 20px 0px -10px #ffffff, 0px -20px 0px -10px #ffffff,
+      20px 0px 0px -10px #ffffff, -20px 0px 0px -10px #ffffff,
+      0px 0px 0px 10px #03e9f4, 0px 0px 42px 13px #000000;
+    font-size: 30px;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0001);
   }
 `
