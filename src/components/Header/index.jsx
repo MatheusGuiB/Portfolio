@@ -21,7 +21,7 @@ const Header = () => {
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#contats">Contats</a>
+            <a href="#contacts">Contacts</a>
           </li>
         </ul>
         <div className="icons-header">
