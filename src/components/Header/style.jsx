@@ -15,11 +15,8 @@ export const StyledHeader = styled.div`
     color: white;
     border-radius: 10%;
     width: 65px;
+    user-select: none;
   }
-  .my-photo:hover {
-    transform: scale(1.2);
-  }
-
   .info-list {
     list-style: none;
     display: flex;

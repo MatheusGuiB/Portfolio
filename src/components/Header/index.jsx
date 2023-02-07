@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div id="about">
       <StyledHeader>
-        <h1 className="my-photo">Logo</h1>
+        <h1 className="my-photo">Matheus</h1>
         <ul className="info-list">
           <li>
             <a href="#about">About</a>

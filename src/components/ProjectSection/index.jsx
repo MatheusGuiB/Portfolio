@@ -1,5 +1,15 @@
 import { StyledProjectButton } from './style'
 import { useState } from 'react'
+import inprogress from '../../assets/images/work.gif'
+
+const images = [
+  inprogress,
+  inprogress,
+  inprogress,
+  inprogress,
+  inprogress,
+  inprogress,
+]
 
 const ProjectMain = () => {
   const [classNameProjects, setClassNameProjects] = useState('display')
@@ -34,9 +44,11 @@ const ProjectMain = () => {
               Close
             </button>
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              {images.map((image) => (
+                <li className="img" key="{image}">
+                  <img src={image} alt="txt" />
+                </li>
+              ))}
             </ul>
           </div>
         </section>

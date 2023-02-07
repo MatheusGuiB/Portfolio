@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import inprogress from '../../assets/images/work.gif'
 
 export const StyledProjectButton = styled.div`
   width: 100vw;
@@ -124,15 +123,25 @@ export const StyledProjectButton = styled.div`
   .display-none {
     display: flex;
   }
+  section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .container {
+    width: 100%;
+    /* height: 100%; */
+    max-width: 730px;
+    overflow-y: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
   }
-  .show-container {
-  }
+
   .container .close {
     cursor: pointer;
     width: 100px;
@@ -143,25 +152,30 @@ export const StyledProjectButton = styled.div`
     border: none;
     text-transform: uppercase;
     background-color: transparent;
+    position: absolute;
+    top: 230%;
   }
   .container .close:hover {
     color: black;
     background-color: #03e9f4;
     transform: scale(1.1);
-    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
-      0 0 200px #03e9f4;
+    box-shadow: 0px 0px 15px 1px #03e9f4;
   }
   .container ul {
+    /* justify-content: center; */
     display: flex;
     gap: 50px;
+    width: 100%;
+    cursor: pointer;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0002); */
   }
-  .container ul li {
+  .container ul .img {
+    pointer-events: none;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 300px;
     height: 200px;
-    background-image: url(${inprogress});
     background-size: cover;
     background-color: white;
     list-style: none;
@@ -170,6 +184,9 @@ export const StyledProjectButton = styled.div`
       0px 0px 0px 10px #03e9f4, 0px 0px 42px 13px #000000;
     font-size: 30px;
     text-align: center;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0001);
+    cursor: pointer;
+  }
+  img {
+    width: 200px;
   }
 `
