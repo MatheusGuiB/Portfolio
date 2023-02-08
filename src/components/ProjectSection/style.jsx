@@ -168,13 +168,11 @@ export const StyledProjectButton = styled.div`
     margin: 0;
   }
   .container ul .img {
-    pointer-events: none;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 300px;
     height: 200px;
-    background-size: cover;
     background-color: white;
     list-style: none;
     text-align: center;
@@ -182,8 +180,18 @@ export const StyledProjectButton = styled.div`
     margin-bottom: 8px;
     border: 5px groove #03e9f4;
   }
-  .img-style {
+  .container ul .img:hover {
+    background-color: #03e9f4;
+  }
+  img {
     width: 200px;
-    cursor: pointer;
+  }
+  a {
+    width: 100%;
+    text-decoration: none;
+  }
+  .txt-project {
+    width: 200px;
+    color: black;
   }
 `
