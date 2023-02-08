@@ -51,4 +51,7 @@ export const StyledHeader = styled.div`
     transform: scale(1.001);
     cursor: pointer;
   }
+  @media only screen and (max-width: 1100px) {
+    /* display: none; */
+  }
 `

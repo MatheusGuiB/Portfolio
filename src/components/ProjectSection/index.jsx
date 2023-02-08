@@ -45,8 +45,14 @@ const ProjectMain = () => {
             </button>
             <ul>
               {images.map((image) => (
-                <li className="img" key="{image}">
-                  <img src={image} alt="txt" />
+                <li className="img" key={image}>
+                  <a
+                    href="https://youtube.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img className="img-style" src={image} alt="txt" />
+                  </a>
                 </li>
               ))}
             </ul>

@@ -57,11 +57,5 @@ export const StyledContatSection = styled.div`
   a {
     text-decoration: none;
     color: white;
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  a:hover {
-    transform: scale(1.1);
-    color: black;
   }
 `

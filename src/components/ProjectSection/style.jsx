@@ -132,8 +132,7 @@ export const StyledProjectButton = styled.div`
   }
   .container {
     width: 100%;
-    /* height: 100%; */
-    max-width: 730px;
+    max-width: 700px;
     overflow-y: hidden;
     display: flex;
     flex-direction: column;
@@ -162,12 +161,11 @@ export const StyledProjectButton = styled.div`
     box-shadow: 0px 0px 15px 1px #03e9f4;
   }
   .container ul {
-    /* justify-content: center; */
+    padding: 0;
     display: flex;
-    gap: 50px;
+    gap: 35px;
     width: 100%;
-    cursor: pointer;
-    /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0002); */
+    margin: 0;
   }
   .container ul .img {
     pointer-events: none;
@@ -179,14 +177,13 @@ export const StyledProjectButton = styled.div`
     background-size: cover;
     background-color: white;
     list-style: none;
-    box-shadow: 0px 20px 0px -10px #ffffff, 0px -20px 0px -10px #ffffff,
-      20px 0px 0px -10px #ffffff, -20px 0px 0px -10px #ffffff,
-      0px 0px 0px 10px #03e9f4, 0px 0px 42px 13px #000000;
-    font-size: 30px;
     text-align: center;
-    cursor: pointer;
+    box-shadow: inset 0px 0px 50px 10px #000000;
+    margin-bottom: 8px;
+    border: 5px groove #03e9f4;
   }
-  img {
+  .img-style {
     width: 200px;
+    cursor: pointer;
   }
 `
