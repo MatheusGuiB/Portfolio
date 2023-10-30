@@ -183,12 +183,19 @@ export const StyledProjectButton = styled.div`
   .container ul .img:hover {
     background-color: #03e9f4;
   }
-  img {
-    width: 200px;
-  }
+
   a {
-    width: 100%;
+    width: 200px;
+    height: 100%;
     text-decoration: none;
+    .pix {
+      width: 200px;
+    }
+    img {
+      width: 200px;
+      height: 200px;
+      background-repeat: no-repeat;
+    }
   }
   .txt-project {
     width: 200px;

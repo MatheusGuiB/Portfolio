@@ -1,6 +1,9 @@
 import { StyledProjectButton } from './style'
 import { useState } from 'react'
 import inprogress from '../../assets/images/work.gif'
+import smart from '../../assets/images/smart.png'
+import kero from '../../assets/images/kero.png'
+import alejandro from '../../assets/images/alejandro.jpg'
 
 const ProjectMain = () => {
   const [classNameProjects, setClassNameProjects] = useState('display')
@@ -25,32 +28,23 @@ const ProjectMain = () => {
         </div>
         <section className={classNameProjects}>
           <div className="container">
-            <button
-              className="close"
-              onClick={() => {
-                setClassNameProjects('display')
-                setCloseButton('projects-button')
-              }}
-            >
-              Close
-            </button>
             <ul>
               <li className="img">
                 <a
-                  href="https://thunderous-marigold-21a340.netlify.app"
+                  href="https://www.smartsdevs.com/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <h1 className="txt-project">Quiz Song</h1>
+                  <img src={smart} alt="smart" />
                 </a>
               </li>
               <li className="img">
                 <a
-                  href="https://clinquant-raindrop-ac903a.netlify.app"
+                  href="https://testapp.kerootica.com.br/login"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <h1 className="txt-project">MemoryGame</h1>
+                  <img src={kero} alt="kero" />
                 </a>
               </li>
               <li className="img">
@@ -59,12 +53,12 @@ const ProjectMain = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <h1 className="txt-project">Piano</h1>
+                  <img src={alejandro} alt="alejandro" />
                 </a>
               </li>
               <li className="img">
                 <a href="#projects" rel="noreferrer">
-                  <img src={inprogress} alt="txt" />
+                  <img src={inprogress} alt="txt" className="pix" />
                 </a>
               </li>
             </ul>

@@ -38,11 +38,13 @@ export const StyledContatSection = styled.div`
     justify-content: center;
     gap: 10px;
     box-shadow: 0px 0px 50px 23px rgba(112, 128, 144, 0.93);
+    transition: transform 1s;
   }
   .container-contacts div:hover {
     transform: scale(1.01);
-    box-shadow: 0px 0px 50px 23px #03e9f4;
-    background-color: #03e9f4;
+    border: solid #ffffff93;
+    box-shadow: 0px 0px 50px 23px #00000094;
+    background-color: #00000094;
   }
   section {
   }
